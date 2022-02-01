@@ -115,7 +115,7 @@ for i in rec_list:
         index_dec = int(index_hex, 16)
         if result_rec in exp_hash_table[index_dec]:
             count_del += 1
-            # pathlib.Path(i).unlink()
+            pathlib.Path(i).unlink()
     except PermissionError as PE_4:
         error_list.append(PE_4)
 print(start_time(), '-> Duplicate search completed')
